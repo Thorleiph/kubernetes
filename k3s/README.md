@@ -45,7 +45,7 @@ kubectl create ns awx
 
 vi public-static-pvc.yaml
 
-'''yaml
+'''
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

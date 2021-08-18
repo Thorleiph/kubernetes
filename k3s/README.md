@@ -8,6 +8,8 @@ https://computingforgeeks.com/install-and-configure-ansible-awx-on-centos/
 
 The steps from the link above and some of my own notes...
 
+```bash
+
 sudo dnf -y update
 
 sudo reboot
@@ -45,6 +47,9 @@ kubectl create ns awx
 
 vi public-static-pvc.yaml
 
+```
+
+
 ```yaml
 ---
 apiVersion: v1
@@ -59,3 +64,6 @@ spec:
     requests:
       storage: 5Gi
 ```
+
+kubectl apply -f public-static-pvc.yaml -n awx
+
